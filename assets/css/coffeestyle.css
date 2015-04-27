@@ -38,7 +38,7 @@ a {
 /*    display: none;
 */    color: white;
     opacity: .9;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'BenchNine', sans-serif;
     font-weight: 700;
     font-size: 125px;
     opacity: .9;
@@ -236,7 +236,7 @@ a {
 #topphoto {
     width: 125%
     position: relative;
-    height: 340px;
+    height: 400px;
     object-fit: cover;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -253,14 +253,11 @@ a {
 
 #bottomphoto {
     width: 100%;
+    height: 400px;
     position: relative;
     object-fit: cover;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
-}
-
-#pourover1 {
-    bottom: 100px;
 }
