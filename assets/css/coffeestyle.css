@@ -1,13 +1,20 @@
 body {
     overflow: hidden;
     margin: 0px;
+
+}
+
+a {
+    text-decoration: none;
     color: white;
 }
 
-
 #background {
+    background-color: #e5e6e7;
     position: absolute;
-    width: 1280px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 
@@ -28,6 +35,9 @@ body {
 }
 
 .names {
+/*    display: none;
+*/    color: white;
+    opacity: .9;
     font-family: 'Pathway Gothic One', sans-serif;
     font-weight: 700;
     font-size: 125px;
@@ -40,19 +50,28 @@ body {
 
 #french-press-display{
     opacity: 0.9;
+    transition: 0.3s;
+
 }
 #pour-over-display{
     opacity: 0.9;
+    transition: 0.3s;
+
 }
 #espresso-display{
     opacity: 0.9;
+    transition: 0.3s;
+
 }
 #coldbrew-display{
     opacity: 0.9;
+    transition: 0.3s;
+
 }
 
 .subtext {
     margin-top: -5px;
+    color: white;
     position: relative;
     padding: 0px 0px 0px 10px;
     opacity: 0;
@@ -103,9 +122,11 @@ body {
     font-size: 10px;
     letter-spacing: 3px;
     position: relative;
-    color: black;
+    color: white;
     padding: 0;
-    line-height:40px
+    line-height:40px;
+    cursor: pointer;
+
 }
 
 #first {
@@ -148,11 +169,13 @@ body {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 230px;
+    cursor: default;
+
 }
 
 .Kind {
+    display: none;
     font-family: 'BenchNine';
     letter-spacing: 5px;
     font-style: 400;
@@ -161,6 +184,7 @@ body {
 }
 
 .Choice {
+    display: none;
     margin-top: -3px;
     font-family: 'Halant', serif;
     font-size: 14px;
@@ -169,25 +193,40 @@ body {
 }
 
 .doodle {
-    width: 100px;
+    display: none;
+    width: 20%;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow:hidden;
+
 }
 
+.doodle:hover  
+{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+/*
+.rotated {
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+*/
 #pictures {
     position: relative;
+    display: none;
 }
 
-.photo-overlay {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: #e5e6e7;
-    opacity: .3;
-    visibility: hidden;
-}
-
-.photo-overlay.hover {
-    visibility: visible;
-} 
 
 #photocontainer {
     position: relative;
@@ -195,13 +234,33 @@ body {
 }
 
 #topphoto {
-    width: 100%;
+    width: 125%
     position: relative;
-    height: 335px;
+    height: 340px;
+    object-fit: cover;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.03); 
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 #bottomphoto {
     width: 100%;
     position: relative;
-    height: 335px;
+    object-fit: cover;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
+#pourover1 {
+    bottom: 100px;
 }
