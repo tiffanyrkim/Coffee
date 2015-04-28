@@ -234,7 +234,6 @@ a {
 }
 
 #topphoto {
-    width: 125%
     position: relative;
     height: 380px;
     object-fit: cover;
@@ -252,7 +251,6 @@ a {
 }
 
 #bottomphoto {
-    width: 100%;
     height: 380px;
     position: relative;
     object-fit: cover;
